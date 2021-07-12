@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+{% block content %}
+     <div class="d-grid gap-2 col-6 mx-auto">
+            <h1 class="btn btn-primary btn-lg">Добавление продукта</h1>
+        </div>
+    <form action="/add_product/" class="d-grid gap-2 col-4 mx-auto" method="post">
+    {% csrf_token %}
+        <p>{{ form.category }}</p>
+        <p>{{ form.title }}</p>
+        <p>{{ form.description }}</p>
+        <p>{{ form.price }}</p>
+
+    <input type="submit" class="btn btn-success" value="Отправить">
+
+    </form>
+{% endblock %}

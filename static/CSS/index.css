@@ -1,0 +1,47 @@
+body {
+    font-size: 13px;
+    background: rgba(0, 0, 0, 0.94);
+    color: #ffffff;
+}
+
+.btn-outline-warning {
+    border-radius: 40px;
+    margin: 20px;
+    padding: 10px;
+}
+
+.btn-primary {
+    border-radius: 40px;
+    margin: 20px;
+    padding: 10px;
+    color: #030303;
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+
+.logo-img {
+    height: 100px;
+    width: 100px;
+}
+
+.btn-outline-light {
+    border-radius: 40px;
+}
+
+.btn-warning {
+    border-radius: 40px;
+
+}
+
+
+
+.black-tag {
+    font-size: 15px;
+    color: #ffffff;
+    margin: 20px;
+    padding: 10px;
+    border: rgb(255, 194, 0) solid 1px;
+    border-radius: 30px;
+
+
+}

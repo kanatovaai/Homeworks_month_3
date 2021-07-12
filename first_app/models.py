@@ -18,9 +18,9 @@ class Product(models.Model):
         verbose_name = 'Продукт'
         verbose_name_plural = 'Продукты'
 
-    title = models.CharField( max_length=200, verbose_name='Название', blank=False)
+    title = models.CharField(max_length=200, verbose_name='Название', blank=False)
     description = models.CharField('Описание', max_length=500, blank=False)
-    price = models.IntegerField('Цена', default=12, blank=False)
+    price = models.IntegerField('Цена', default=None, blank=False)
     category = models.ForeignKey(Category, verbose_name='Категория', on_delete=models.SET_NULL, null=True)
 
     def __str__(self):
@@ -33,6 +33,7 @@ class Review(models.Model):
         verbose_name_plural = 'Отзывы'
 
     text = models.CharField('Текст', max_length=500, blank=False)
+    # author = models.CharField('Пользователь', max_length=200, blank=False)
     product = models.ForeignKey(Product, verbose_name='Продукт', on_delete=models.CASCADE, null=True)
 
     def __str__(self):

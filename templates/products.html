@@ -1,13 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<h1>{{ title }}</h1>
-{% for product in products %}
-     <p>{{ product.id }} : {{ product.title }}</p>
-{% endfor %}
-</body>
-</html>
+{% extends 'layout.html' %}
+{% block content %}
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <h1 class="btn btn-primary btn-lg">{{ product.title }}</h1>
+    </div>
+    {% for review in reviews %}
+        <h4 class="nav-link px-2 text-white"  style="font-size: 15px">  {{ review.id }} : {{ review.text }}</h4>
+        <hr>
+    {% endfor %}
+{% endblock %}
+
+

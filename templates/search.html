@@ -1,0 +1,13 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block content %}
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <h1 class="btn btn-primary btn-lg"> Поиск</h1>
+    </div>
+    <div class="d-grid gap-2 col-4 mx-auto">
+        <input id="search-input" type="text" name="search_text" placeholder="Введите название">
+    </div>
+    <div id="search-data">
+
+    </div>
+{% endblock %}
